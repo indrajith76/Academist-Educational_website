@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-full{
+    width: 100%;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container:before,
+.container:after,
+.container-full:before,
+.container-full:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-50{
+    width: 50%;
+    float: left;
+    padding: 0 25px;
+}
+
+.col-33{
+    width: 33.33%;
+    float: left;
+    padding: 0 25px;
+}
+
+.col-20{
+    width: 20%;
+    float: left;
+    padding: 0 20px;
+}
+
+.col-25{
+    width: 25%;
+    float: left;
+    padding: 0 25px;
+}
+
+.col-30{
+    width: 30%;
+    float: left;
+    padding: 0 25px;
+}
+
+.col-70{
+    width: 70%;
+    float: left;
+    padding: 0 25px;
+}
+
+.col-100{
+    width: 100%;
+    float: left;
+    padding: 0 25px;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: 700;
+}
+
+.section-padding{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+/* --------------End defult css--------------- */
+
+/* --------------Start Site css--------------- */
+
+/* 01. Top Header Css */
+.top-header{
+    background-color: #1D1D1D;
+    padding: 10px 0;
+}
+
+.number {
+    color: #d3d1d1;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.social{
+    display: inline-block;
+    color: #b6b6b6;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.social li{
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 3px;
+}
+
+.social li a{
+    color: #929292;
+    transition: 0.3s;
+}
+
+.login-register {
+    font-size: 14px;
+    text-transform: capitalize;
+    float: right;
+}
+
+.login-register a{
+    color: #929292;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+.login-register i{
+    margin-right: 3px;
+}
+
+.number:hover,
+.social a:hover,
+.login-register a:hover{
+    color: #FF1949;
+}
+
+
+/* 02. Header Css */
+header{
+    background: #fff;
+    padding: 25px 0;
+}
+
+.logo img{
+    width: 170px;
+}
+
+ul.main-manu{
+    list-style: none;
+    float: right;
+    padding-top: 5px;
+}
+
+.main-manu li{
+    display: inline-block;
+}
+
+.main-manu li a{
+    text-decoration: none;
+    color: #252525;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0 0 0 20px;
+    transition: .3s;
+    border-bottom: 2px solid transparent;
+}
+
+.active{
+    border-bottom: 2px solid #FE1949 !important;
+}
+
+.manu-icon{
+    margin-left: 10px !important;
+}
+
+.main-manu li a:hover{
+    border-bottom: 2px solid #FE1949;
+}
+
+.manu-icon:hover{
+    border-bottom: 2px solid transparent !important;
+    color: #FE1949;
+}
+
+/* 03. Home css */
+.home{
+    background-image: url("../img/home/01.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    color: #fff;
+}
+
+.home h1{
+    font-size: 92px;
+    font-weight: 700;
+    position: relative;
+}
+
+.home h1:before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 55px;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+}
+
+.home p{
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 30px;
+    padding: 25px 0;
+}
+
+.btn{
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: capitalize;
+    padding: 20px 40px;
+    display: inline-block;
+    text-decoration: none;
+    transition: .3s;
+    margin-right: 20px;
+}
+
+.btn i{
+    visibility: hidden;
+    transition: .3s;
+}
+
+.btn:hover i{
+    visibility: visible;
+}
+
+.btn-active{
+    background: #FE1949;
+    border: 2px solid #FE1949;
+}
+
+/* 04. Courses Css */
+ul.courses-menu{
+    list-style: none;
+    padding-bottom: 40px;
+}
+
+.courses-menu li{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 17px;
+    color: #252525;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.courses-home{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.courses-home img{
+    width: 100%;
+    height: 100%;
+    transition: .9s;
+}
+
+.crs-ctg{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    color: #fff;
+    background: #FE1949;
+    padding: 12px 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.crs-ctg:hover{
+    background-color: #252525;
+}
+
+.courses-box:hover img{
+    transform: scale(1.1);
+}
+
+.courses-details h3 a{
+    font-size: 20px;
+    color: #252525;
+    transition: .3s;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 20px 0 5px 0;
+    display: inline-block;
+}
+.courses-details h3 a:hover{
+    color: #FE1949;
+}
+
+.instructor{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #252525;
+    padding-bottom: 30px;
+    display: inline-block;
+    position: relative;
+}
+
+.courses-details p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #444;
+
+}
+
+.courses-footer{
+    font-size: 13px;
+    padding-top: 30px;
+}
+
+.courses-footer a{
+    color: #252525;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.courses-footer i{
+    padding-right: 4px;
+}
+
+.ratings{
+    margin-left: 20px;
+}
+
+.course-fee {
+    float: right;
+    font-size: 20px;
+    color: #fd1949 !important;
+    font-weight: 500;
+}
+
+.instructor:before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    height: 3px;
+    width: 40px;
+    background: #FE1949;
+    transition: .3s;
+}
+
+.courses-box:hover .instructor:before{
+    width: 60px;
+}
+
+/* 05. Expart css */
+.expart-box{
+    width: 100%;
+    height: 420px;
+    background: #FE1949;
+}
+
+.expart-box-01 {
+    background: #FE1949;
+}
+
+.expart-box-02 {
+    background: url("../img/expart/01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.expart-box-03 {
+    background: url("../img/expart/02.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.expart-box-04 {
+    background: url("../img/expart/03.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.expart .col-50{
+    padding: 0;
+}
+
+.expart-box{
+    padding: 120px 144px;
+    color: #fff;
+}
+
+.expart-box h3{
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+
+.expart-box a{
+    font-size: 17px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+}
+
+.expart-box-04 h3,
+.expart-box-04 a{
+    color: #252525;
+}
+
+ /* 06. Teachers Css */
+.section-title{
+    padding-bottom: 80px;
+}
+
+.section-title h2{
+    font-size: 45px;
+    color: #252525;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.section-title h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    left: 0;
+    bottom: 25px;
+    background: #fd1949 ;
+
+}
+
+.section-title p{
+    font-size: 19px;
+    color: #333;
+    line-height: 29px;
+}
+
+.teachers-single{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.teachers-single-left{
+    width: 140px;
+    height: 140px;
+}
+
+.teachers-single-right{
+    color: #252525;
+    padding: 24px 30px 0 30px;
+}
+ 
+.teachers-single-right h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    
+}
+
+.teachers-single-right h3 a{
+    color: #252525;
+    text-decoration: none;
+}
+
+.teachers-single-right h3 a:hover{
+    color: #FF1949;
+}
+
+.teachers-single-right span{
+    font-size: 15px;
+}
+
+.teachers-single-right ul{
+    list-style: none;
+    
+    padding-top: 5px;
+}
+
+.teachers-single-right ul li{
+    display: inline-block;
+}
+
+.teachers-single-right ul li a{
+    font-size: 14px;
+    margin-right: 4px;
+    color: #252525;
+}
+
+.teachers-single-right ul li a:hover{
+    color:#fd1949;
+}
+
+.teachers.section-padding{
+    padding-bottom: 90px;
+}
+
+/* 07. Review css */
+.review{
+    background: url("../img/review-background/01.jpg");
+    background-size: cover;
+}
+
+.review-single{
+    display: flex;
+}
+
+.review-author{
+    height: 140px;
+    width: 140x;
+    border-radius: 50%;
+}
+
+.review-feedback{
+    color: #fff;
+    padding-left: 45px;
+}
+.review-feedback p{
+    font-size: 45px;
+    line-height: 54px;
+    font-weight: 700;
+}
+.review-feedback span{
+    font-size: 19px;
+    padding-top: 5px;
+    display: inline-block;
+}
+
+/* 08. Tour css */
+.tour-section-title{
+    padding-bottom: 30px;
+}
+
+.tour-section-title h2{
+    font-size: 45px;
+    line-height: 54px;
+}
+
+.tour-section-title p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.tour-list{
+    list-style: none;
+}
+
+.tour-list li{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.tour-list li i{
+    color: #fd1949;
+}
+
+/* 09. Partner css */
+.partner{
+    background: url("../img/partner/background.jpg");
+    background-size: cover;
+}
+
+.partner img{
+    margin: 70px 0 60px 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.partner-img-second {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px !important;
+    right: 0;
+    height: auto;
+    width: 82.5% !important;
+    opacity: 0;
+    transition: .5s ease;
+  }
+
+.partner .container .col-100 .col-20:hover .partner-img-second {
+    opacity: 1;
+  }
+
+  /* 10. form css */
+.form{
+      background: url("../img/form-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      height: 700px;
+      z-index: 1;
+    }
+
+.form::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .3;
+}
+
+.form-left{
+    background: #fd1949;
+    color: #fff;
+    padding: 100px 70px;
+    margin-left: 100px;
+}
+
+.form-left h3{
+    font-size: 40px;
+}
+
+.form-right {
+    background: #fff;
+    padding: 52.5px 70px;
+    margin-right: 100px;
+    position: relative;
+}
+
+.form-right i{
+    position: absolute;
+    font-size: 40px;
+    left: -11px;
+    top: 45%;
+    color: #fff;
+}
+
+.form-right h4{
+    font-size: 28px;
+    line-height: 33px;
+    color: #252525;
+    text-transform: capitalize ;
+    margin-bottom: 25px;
+}
+
+.form-right input{
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+
+.form-right input[type="submit"]{
+    width: 150px;
+    padding: 20px 0;
+    background: #252525;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 5f0px;
+    margin-top: 35px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form-right input[type="submit"]:hover{
+    background: #fd1949;
+}
+
+.form .col-50{
+    padding: 0;
+}
+
+/* 11. Footer Css */
+.footer{
+    background: #252525;
+    padding: 90px 0 90px 0;
+    color: #fff;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer a:hover{
+    color: #fd1949;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer h3{
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.footer-p{
+    font-size: 12.5px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.contact li{
+    margin: 10px 0 0 0;
+}
+
+.contact a{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.footer-course{
+    margin: 20px 0 0 0;
+}
+
+.footer-course li{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-cn{
+    font-size: 16px !important;
+    font-weight: 700 !important;
+}
+
+.support h3{
+    margin: 0 0 14px 0;
+}
+
+.support li{
+    margin: 10px 0 0 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer img{
+    width: 100%;
+}
+
+.footer-end{
+    background: #1D1D1D;
+    padding: 40px 0 40px 0;
+    color: #afafaf;
+}
+
+.footer-end-r{
+    font-size: 14px;
+}
+
+.footer-end-r a{
+    text-decoration: none;
+    color: #afafaf;
+}
+
+.footer-end-r a:hover{
+    color: #fd1949;
+    text-decoration: underline;
+}
+
+.footer-end-l {
+    float: right;
+}
+
+.footer-end-l li{
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.footer-end-l li a{
+    color: #afafaf;
+    text-decoration: none;
+}
+
+.footer-end-l li a:hover{
+    color: #fd1949;
+}
+
+.footer-num{
+    margin-right: 20px !important;
+}
+
+.footer-num a:hover {
+    color: #afafaf !important;
+    text-decoration: underline;
+}
